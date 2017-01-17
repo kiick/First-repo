@@ -15,19 +15,19 @@ namespace NUM1
             var excluding = char.Parse(Console.ReadLine());
             int cnt = 0;
 
-            for (var i = firstLetter; i <= secondLetter; i++)
+            for (var o = firstLetter; o <= secondLetter; o++)
             {
                 for (var j = firstLetter; j <= secondLetter; j++)
                 {
                     for (var k = firstLetter; k <= secondLetter; k++)
                     {
-                        if (excluding == i 
+                        if (excluding == o 
                             || excluding == j
                             || excluding == k)
                         {
                             continue;
                         }
-                        Console.Write($"{i}{j}{k} ");
+                        Console.Write($"{o}{j}{k} ");
                         cnt++;
                     }
                 }
